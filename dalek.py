@@ -2,11 +2,11 @@
 # Dalek was tested on Ubuntu 12.04 and OSX ML
 # ----------- OSX ---------------
 # Install MongoDB via http://www.mongodb.org/downloads
-# OSX Deps: pip install -r environment.txt
+# OSX Deps: pip install -U -r environment.txt
 # ----------- Linux -------------
 # Install MongoDB via http://www.mongodb.org/downloads
 # Linux: sudo apt-get install python-pip
-# Linux Deps: pip install -r environment.txt
+# Linux Deps: pip install -U -r environment.txt
 
 from xml.etree.ElementTree import ElementTree
 from pymongo.connection import Connection
@@ -57,7 +57,7 @@ def parsenessus(infile):
                         #Get OS and FQDN
                         if g.tag == "HostProperties":
                             # Create initial Dictionary entries for optional values
-                            nessus_dict["os"] = ""
+                            nessus_dict["os"] = "Unknown"
                             nessus_dict["fqdn"] = ""
                             for h in g.getchildren():
                                 if h.tag == 'tag':
@@ -179,8 +179,7 @@ def createwbk(sorted_list, found_e, outfile):
     osheet.col(1).width = 5000
     # Title Row Style
     title_style = xlwt.easyxf(
-        'pattern: pattern solid, fore_colour 16, back_colour 16; '
-        'font: height 200, name Arial Black, colour_index white;'
+        'font: height 200, name Arial Black;'
         'alignment: vertical center;'
     )
     # Normal Row Style

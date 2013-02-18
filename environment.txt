@@ -1,5 +1,5 @@
-argparse==1.2.1
-distribute==0.6.24
-pymongo==2.4.2
-wsgiref==0.1.2
-xlwt==0.7.4
+argparse
+distribute
+pymongo
+wsgiref
+xlwt

@@ -38,11 +38,11 @@ Note:    -i or --infile and -d or --dir are mutually exclusive  <br>
 -e or --exclude     Exclude Hosts with Empty Services  <br>
 
 ## Installation 
-# Dalek was tested on Ubuntu 12.04 and OSX ML
-# ----------- OSX ---------------
-# Install MongoDB via http://www.mongodb.org/downloads
-# OSX Deps: pip install -U -r environment.txt
-# ----------- Linux -------------
-# Install MongoDB via http://www.mongodb.org/downloads
-# Linux: sudo apt-get install python-pip
-# Linux Deps: pip install -U -r environment.txt
+Dalek was tested on Ubuntu 12.04 and OSX ML <br>
+ ----------- OSX --------------- <br>
+Install MongoDB via http://www.mongodb.org/downloads <br>
+OSX Deps: pip install -U -r environment.txt <br>
+----------- Linux ------------- <br>
+Install MongoDB via http://www.mongodb.org/downloads <br>
+Linux: sudo apt-get install python-pip <br>
+Linux Deps: pip install -U -r environment.txt <br>
